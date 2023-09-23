@@ -1,0 +1,99 @@
+
+<!--how to create form in html?
+<form>tag:- this tag is used to  create form in html.
+	attributes:-
+    1.name
+    2.method=server sided file name"
+ e.g
+<form name="login" method="post" action="login.php">
+form elements
+</form>
+
+->element of <form>tag
+1.<input>tag:-this is used to create several form element as text box,radiobutton,checkbox,button etc.
+
+textbox:-used for both input and output
+<input type="text">
+password:-<input type="password">
+radio button 
+<input type="radio"name="same name a/c to group">
+checkbox
+<input type="checkbox">
+colordilaog
+<input type="color">
+file dialog
+<input type="file">date
+<input type="date">
+<input type="time">
+email
+<input type="email">
+searching box
+<input type="search">
+button:-perform operation at client side area
+input type="button"value="calculate">
+submit:-transfer data from client to server
+<input type="button"value="register">
+reset:-reset/clear data on form at client sided area
+<input type="reset" value ="reset">
+image;create image type button
+<input type ='image" src="image file">
+-how to create combo box?/dropdown list?
+<select>:-used to create dropdown list
+<option>:-used to specify option /item in list	
+-->form attribute of htmls 
+placeholder
+required
+title
+disabled
+read-only
+autofocus
+autocomplete
+size maxlength
+pattern
+
+
+
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form element</title>
+	<script type="text/javascript">
+		function changecolor()
+		{     
+		   var co;
+		   co=document.getElementbyId("color").value;
+		   document.bgcolor=co;                   
+		}
+	</script>
+</head>
+<body bgcolor="blue"><center> <form><h1>enquiry form</h1>
+	<table><tr><td><span style="color:white">name<span style="color:red"><sup>*</sup></td> <td> <input type="text" name="" placeholder="enter your name"title="it is text box" size="40"        
+	    pattern="[A-Za-z0-9]+"required  autofocus></td></tr>
+<tr><td>username</td> <td> <input type="text" name="" value="cimage" readonly></td></tr>
+<tr><td>password</td> <td> <input type="password" name="" ></td></tr>
+<tr><td>user type</td> <td> <input type="radio" name="ut">admin<input type="radio"name="ut">guest</td></tr>
+<tr><td>gender</td> <td> <input type="radio" name="gen">male<input type="radio" name ="gen">female</td></tr>
+<tr><td>hobby</td> <td> <input type="checkbox" name="">music<input type="checkbox" name="">news <input type="checkbox" name="">cricket<input type="checkbox" name="">painting</td></tr>
+<tr><td>password</td> <td> <input type="text" name=""></td></tr>
+<tr><td>selectcolor</td><td><input type="color" name="" id="color"></td>
+<td><input type="button" name="" value="change background color" onclick="changecolor()"></td></tr>
+<tr><td>uploadimage</td><td><input type="file"name=""></td></tr>
+<tr><td>dob</td><td><input type="date"name=""></td></tr>
+<tr><td>email</td><td><input type="email"name=""></td></tr>
+<tr><td>search</td><td><input type="search"name=""></td></tr>
+<tr><td>time</td><td><input type="time" name=""></td></tr>
+	<tr><td>select your favourite color</td><td><select><option>
+red</option><option selected>green</option><option>orange</option><option>yellow</option></select></td></tr><tr><td>select your favourite player</td><td><select multiple><option>
+sachin</option><option>dhoni</option><option>rohit</option><option>virat</option><option>ashwin</option></select></td></tr>
+
+
+<tr><td><input type="submit" value="register"><input type="reset" value="reset"><input type="button" value="exit" onclick="window.close()">
+<input type="image" src="C:\Users\SHUBHAM\Documents\Pictures\Saved Pictures\images (4).jfif" height="40" width="100"></td></tr></table>
+</form></center>
+
+</body>
+</html>

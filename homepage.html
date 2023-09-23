@@ -1,0 +1,33 @@
+<!--how to divide webpage into several sction a/c to requirement ?
+	<frame set>:-this tag is used to divide webpage into multiple section in horizontal and vertical direction.in this case after division of webpage multiple frames will be created.
+	every frames contain seperate webpages
+
+	attribute of <frameset>tag
+		1.rows:-divide webpages in horizontal direction
+		2.cols:-divide webpages in vertical direction.
+		3. frameborder
+
+		e.g
+		<frameset rows ="20%,10%,50%,*">
+			note:-<frame set>tag can not be defined with in body.
+
+		how to load webpages in created frames?
+		<frame>tag:-this tag is used to load webpages into created section.
+		attributes
+		1.name
+		2.src:-specify webpages name
+
+
+		note:-<frame tag> must be defined with in <frameset> tag
+			e.g <frame src="header.html" name="header"></frame> -->
+			<frameset rows="20%,10%,50%,*">
+				<frame src="header.html"></frame>
+				<frame src="menu.html"></frame>
+				<frameset  cols="25%,*,25%">
+					<frame src="left.html"></frame>
+				<frame src="main.html"></frame> 
+				<frame src="right.html"></frame></frameset>
+				<frame src="footer.html"></frame>
+			</frameset>
+
+
